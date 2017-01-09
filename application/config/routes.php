@@ -39,6 +39,9 @@
 */
 
 $route['default_controller'] = "welcome";
+$route['comments'] = 'welcome';
+$route['comments/(:num)'] = 'welcome/comment/$1';
+
 $route['404_override'] = '';
 
 

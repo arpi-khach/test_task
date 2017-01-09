@@ -6,7 +6,25 @@ class Comments extends CI_Model{
         return $row=$q->result_array();
 
     }
+    public function getById($id){
+        $this->db->where('item_id', $id);
+        $q=$this->db->get('comments');
+        return $row=$q->result_array();
 
+    }
+    public function insertComment($description,$user_id){
+
+        $this->item_id   = 1;
+        $this->description = $description;
+        $this->userid = $user_id;
+        $this->date    = time();
+
+        if($this->db->insert('comments', $this)){
+            return 1;
+        }
+        else return 0;
+
+    }
 }
 
 
