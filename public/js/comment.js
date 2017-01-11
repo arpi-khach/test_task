@@ -12,6 +12,11 @@ $(document).ready(function () {
         }
     });
 
+    $(window).bind('beforeunload',function(e){
+        editorOnBlur();
+        return "Please save changes and reload!";
+    });
+
     setInterval(function () {
         listenUserActivities();
         checkNewComments();
@@ -60,7 +65,6 @@ function listenUserActivities() {
             var typingContainer = $('#typing');
 
             $.each(response, function(i, user) {
-                console.log(user.user_name);
                 appendHtml += "<span>" + user.user_name + " is typing a response...</span><br>";
             });
 
