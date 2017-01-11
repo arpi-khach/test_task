@@ -24,9 +24,7 @@
     <div class="container">
         <h1 class="welcome text-center">Add new comment</h1>
         <form method="post" action="<?=base_url('comment/saveComment')?>">
-            <div class="" id="typing">
-                <span>Igor is typing a response...</span>
-            </div>
+            <div class="" id="typing"></div>
             <textarea id="mytextarea" name="description" data-user-id="<?=$userId; ?>"></textarea>
             <input type="hidden" name="item-id" value="<?=$itemId; ?>">
             <input type="submit"  name="submit" value="Add Comment" id="comment_submit" class="btn btn-lg btn-primary pull-right" >
@@ -34,8 +32,6 @@
     </div>
 
     <script type="text/javascript" src="<?=base_url('public/js/jquery-1.11.1.min.js')?>"></script>
-    <script type="text/javascript" src="<?=base_url('public/js/js.js')?>"></script>
-
     <script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
     <script src="<?=base_url('public/js/comment.js')?>"></script>
 </div>

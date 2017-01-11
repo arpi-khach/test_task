@@ -42,6 +42,7 @@ $route['default_controller'] = "comment/index/1";
 $route['comments/(:num)'] = 'comment/index/$1';
 $route['log-comment-activity'] = 'ajax/logCommentActivity';
 $route['update-comment-activity-status'] = 'ajax/updateCommentActivity';
+$route['get-comment-activities'] = 'ajax/getUserActivities';
 
 $route['404_override'] = '';
 
