@@ -2,13 +2,13 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Comments extends CI_Model{
     public function getAll(){
-        $q=$this->db->get('comments');
+        $q = $this->db->get('comments');
 
         return $row=$q->result_array();
     }
-    public function getById($id){
-        $this->db->where('item_id', $id);
-        $q=$this->db->get('comments');
+    public function getByItemId($itemId){
+        $this->db->where('item_id', $itemId);
+        $q = $this->db->get('comments');
 
         return $row=$q->result_array();
     }
@@ -22,7 +22,14 @@ class Comments extends CI_Model{
         if($this->db->insert('comments', $this)){
             return 1;
         }
-        else return 0;
+        return 0;
+    }
+
+    public function getNewAddedComments($oldCommentsCount, $itemId){
+        $this->db->where('item_id', $itemId);
+        $q = $this->db->get('comments', 1000, $oldCommentsCount);
+
+        return $row=$q->result_array();
     }
 }
 

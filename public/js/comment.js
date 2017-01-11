@@ -12,7 +12,14 @@ $(document).ready(function () {
         }
     });
 
-    setInterval(listenUserActivities, 2000);
+    setInterval(function () {
+        listenUserActivities();
+        checkNewComments();
+    }, 2000);
+
+    $('#show-new-comments').on('click', function () {
+        showNewComments();
+    });
 });
 
 function editorOnFocus(e) {
@@ -65,4 +72,59 @@ function listenUserActivities() {
         },
         dataType: 'json'
     });
+}
+
+function checkNewComments() {
+    var oldCommentsCount = $('#comments-container').data('comments-count');
+    var itemId         = $('input[name="item-id"]').val();
+    var unreadCount    = $('#unread-count');
+    var unreadComments = $('#unread-comments');
+    var isOrAre = 'are';
+    var comment_s = 'comments';
+
+    $.ajax({
+        type: "POST",
+        url: '/check-for-new-comments',
+        data: {itemId: itemId, oldCommentsCount: oldCommentsCount},
+        success: function (result) {
+            var response = $.parseJSON(result);
+            var appendHtml = "";
+
+            if(response.length > 0){
+                if (response.length == 1){
+                    isOrAre   = 'is';
+                    comment_s = 'comment';
+                }
+
+                var text = isOrAre + ' ' + response.length + ' new ' + comment_s;
+                unreadCount.html(text);
+                unreadComments.show();
+
+                newComments = response;
+            }
+        },
+        dataType: 'json'
+    });
+}
+
+function showNewComments() {
+    var oldCommentsCount = $('#comments-container').data('comments-count');
+    var unreadComments    = $('#unread-comments');
+    var commentsContainer = $('#comments-container');
+    var appendHtml        = '';
+
+    $.each(newComments, function(i, comment) {
+        appendHtml += '<div class="span8" id="comment-' + comment.commentid +'">' +
+        '<h1>User_' + comment.userid + '</h1>' +
+        '<div><p>' + comment.description + '</p>' +
+        '</div><div class="clear"></div><hr></div>';
+    });
+
+    commentsContainer.append(appendHtml);
+    commentsContainer.data('comments-count', oldCommentsCount + newComments.length);
+    unreadComments.hide();
+
+    $('html, body').animate({
+        scrollTop: $("#comment-" + newComments[0].commentid ).offset().top
+    }, 2000);
 }

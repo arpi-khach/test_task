@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebb4c889-e7b5-47d7-bb03-666e6615d3f2" name="Default" comment="Removed separate add comment page">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CodeIgniter-2.2.6.iml" afterPath="$PROJECT_DIR$/.idea/CodeIgniter-2.2.6.iml" />
+    <list default="true" id="ebb4c889-e7b5-47d7-bb03-666e6615d3f2" name="Default" comment="Removed commented code">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/routes.php" afterPath="$PROJECT_DIR$/application/config/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Ajax.php" afterPath="$PROJECT_DIR$/application/controllers/Ajax.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Comment.php" afterPath="$PROJECT_DIR$/application/controllers/Comment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Comments.php" afterPath="$PROJECT_DIR$/application/models/Comments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/comments.php" afterPath="$PROJECT_DIR$/application/views/comments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/comment.js" afterPath="$PROJECT_DIR$/public/js/comment.js" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -26,8 +31,8 @@
       <file leaf-file-name="Comment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="30" selection-start-line="20" selection-start-column="12" selection-end-line="21" selection-end-column="30" />
+            <state relative-caret-position="495">
+              <caret line="40" column="42" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -36,8 +41,8 @@
       <file leaf-file-name="Ajax.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="64" column="71" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="71" />
+            <state relative-caret-position="405">
+              <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -46,8 +51,8 @@
       <file leaf-file-name="Comments.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Comments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            <state relative-caret-position="522">
+              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -56,8 +61,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="7" />
+            <state relative-caret-position="702">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -66,8 +71,8 @@
       <file leaf-file-name="comments.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/comments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+            <state relative-caret-position="594">
+              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -76,8 +81,8 @@
       <file leaf-file-name="comment.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/comment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="540">
+              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,8 +91,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="43" column="38" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="38" />
+            <state relative-caret-position="706">
+              <caret line="45" column="30" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -143,14 +148,14 @@
         <option value="$PROJECT_DIR$/application/controllers/welcome.php" />
         <option value="$PROJECT_DIR$/application/controllers/Welcome.php" />
         <option value="$PROJECT_DIR$/application/controllers/Comments.php" />
-        <option value="$PROJECT_DIR$/application/models/Comments.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Comment.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/application/models/LogCommentActivity.php" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
-        <option value="$PROJECT_DIR$/application/views/comments.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Comment.php" />
+        <option value="$PROJECT_DIR$/application/models/Comments.php" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/application/controllers/Ajax.php" />
-        <option value="$PROJECT_DIR$/application/models/LogCommentActivity.php" />
+        <option value="$PROJECT_DIR$/application/views/comments.php" />
         <option value="$PROJECT_DIR$/public/js/comment.js" />
       </list>
     </option>
@@ -367,7 +372,7 @@
       <workItem from="1484061461005" duration="680000" />
       <workItem from="1484062461753" duration="367000" />
       <workItem from="1484122110806" duration="759000" />
-      <workItem from="1484124316973" duration="10734000" />
+      <workItem from="1484124316973" duration="17590000" />
     </task>
     <task id="LOCAL-00001" summary="Removed separate add comment page">
       <created>1484125274608</created>
@@ -397,11 +402,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484137994156</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Removed commented code">
+      <created>1484138142886</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1484138142886</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28245000" />
+    <option name="totallyTimeSpent" value="35101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -448,7 +460,8 @@
     <MESSAGE value="unneeded styles has been removed" />
     <MESSAGE value="removed unneeded js file" />
     <MESSAGE value="Show when other users typing comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Show when other users typing comments" />
+    <MESSAGE value="Removed commented code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed commented code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -712,46 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="43" column="38" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Comments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="30" selection-start-line="20" selection-start-column="12" selection-end-line="21" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="64" column="71" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/LogCommentActivity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
@@ -760,18 +733,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        <state relative-caret-position="594">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/comment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="540">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
           <folding />
         </state>
       </provider>

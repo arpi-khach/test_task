@@ -70,6 +70,21 @@ class Ajax extends CI_Controller {
         }
     }
 
+    public function checkForNewComments(){
+        if( $this->input->post('itemId')) {
+
+            $itemId           = $this->input->post('itemId');
+            $oldCommentsCount = $this->input->post('oldCommentsCount');
+
+            $this->load->model('Comments');
+            $comments = $this->Comments->getNewAddedComments($oldCommentsCount, $itemId);
+
+            $this->responseJson(json_encode($comments));
+        }else{
+            $this->responseBadRequest();
+        }
+    }
+
     private function responseJson($resp){
         //add the header
         header('Content-Type: application/json');

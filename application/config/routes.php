@@ -43,6 +43,7 @@ $route['comments/(:num)'] = 'comment/index/$1';
 $route['log-comment-activity'] = 'ajax/logCommentActivity';
 $route['update-comment-activity-status'] = 'ajax/updateCommentActivity';
 $route['get-comment-activities'] = 'ajax/getUserActivities';
+$route['check-for-new-comments'] = 'ajax/checkForNewComments';
 
 $route['404_override'] = '';
 

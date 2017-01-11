@@ -23,7 +23,7 @@ class Comment extends CI_Controller {
         }
 
         $this->load->model('Comments');
-        $comments=$this->Comments->getById($itemId);
+        $comments = $this->Comments->getByItemId($itemId);
 
         $data['comments']=$comments;
         $data['userId'] = $userId;

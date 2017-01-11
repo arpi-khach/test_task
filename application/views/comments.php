@@ -9,17 +9,19 @@
 <body>
 <div class="container">
     <h1 class="welcome text-center">Comments</h1>
-    <div class="alert alert-success text-center" id="unread-count">There is/are <span>N</span> new comment(s). Click <a href="#">here</a> to view</div>
-    <?php foreach ($comments as $comment){?>
-        <div class="span8">
-            <h1>User_<?=$comment['userid']?></h1>
-            <div>
-                <p><?=$comment['description']?></p>
+    <div class="alert alert-success text-center" id="unread-comments">There <span id="unread-count"></span>. Click <a id="show-new-comments" href="#">here</a> to view</div>
+    <div id="comments-container" data-comments-count="<?=count($comments); ?>">
+        <?php foreach ($comments as $comment){?>
+            <div class="span8" id="comment-<?=$comment['commentid']?>">
+                <h1>User_<?=$comment['userid']?></h1>
+                <div>
+                    <p><?=$comment['description']?></p>
+                </div>
+                <div class="clear"></div>
+                <hr>
             </div>
-            <div class="clear"></div>
-            <hr>
-        </div>
-    <?php } ?>
+        <?php } ?>
+    </div>
 
     <div class="container">
         <h1 class="welcome text-center">Add new comment</h1>
