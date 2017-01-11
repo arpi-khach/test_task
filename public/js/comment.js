@@ -48,7 +48,6 @@ function listenUserActivities() {
         url: '/get-comment-activities',
         data: {itemId: itemId},
         success: function (result) {
-            // console.log(result);
             var response = $.parseJSON(result);
             var appendHtml = "";
             var typingContainer = $('#typing');
