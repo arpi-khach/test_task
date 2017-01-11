@@ -178,4 +178,18 @@ hr{
 }
 #comment_submit{
     margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#typing{
+    width: 40%;
+    background-color: #80FFFF;
+    display: none;
+}
+
+#typing span{
+    margin: 5px;
+}
+#unread-count{
+    display: none;
 }

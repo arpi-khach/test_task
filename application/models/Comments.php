@@ -3,18 +3,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Comments extends CI_Model{
     public function getAll(){
         $q=$this->db->get('comments');
-        return $row=$q->result_array();
 
+        return $row=$q->result_array();
     }
     public function getById($id){
         $this->db->where('item_id', $id);
         $q=$this->db->get('comments');
+
         return $row=$q->result_array();
-
     }
-    public function insertComment($description,$user_id){
+    public function insertComment($description,$user_id, $itemId){
 
-        $this->item_id   = 1;
+        $this->item_id   = $itemId;
         $this->description = $description;
         $this->userid = $user_id;
         $this->date    = time();
@@ -23,7 +23,6 @@ class Comments extends CI_Model{
             return 1;
         }
         else return 0;
-
     }
 }
 
